@@ -110,6 +110,52 @@ header {
     color: var(--light-text);
 }
 
+/* Perspective Buttons */
+.perspective-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perspective-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.perspective-btn:hover {
+    border-color: var(--accent-color);
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.btn-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.perspective-btn:hover .btn-title {
+    color: var(--accent-color);
+}
+
+.btn-date {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
 /* Article Template */
 .article-header {
     margin-bottom: 40px;
